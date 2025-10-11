@@ -5,4 +5,10 @@ const {produtoController} = require("../controllers/produtoCrontoller");
 // GET /produtos -> Listar de todos os produtos.
 router.get('/produtos', produtoController.listarProdutos);
 
+// POST /produto -> Cria um novo produto
+router.post('/produtos', produtoController.criarProduto);
+
+
+
+// 
 module.exports = {produtoRoutes: router};
